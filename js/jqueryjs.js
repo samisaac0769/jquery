@@ -151,21 +151,32 @@ $(document).ready(function () {
 
 
       if (isNameValid && isAgeValid && isAddressValid && isStateValid && isPhoneValid && isEmailValid && isPasswordValid && isCpasswordValid) {
-
-         $(".card").hide();
-         $(".success").show();
-         $("button").click(function () {
-            $(".success").hide();
-            $(".card").show();
-
-            location.reload();
-
-         });
+         $("input,label").hide(1000);
+         $(".card").slideUp(1000);
+         $(".success").show(1500);
 
 
       } else {
-         console.log("Validation failed. Form not submitted."); // Check if this log message appears in the console
+         console.log("Validation failed. Form not submitted.");
       }
+
+
+      $("#try").click(function () {
+         $("#name").val("");
+         $("#age").val("");
+         $("#address").val("");
+         $("#state").val("");
+         $("#phone").val("");
+         $("#email").val("");
+         $("#password").val("");
+         $("#Cpassword").val("");
+
+         $(".success").slideUp("slow");
+         $("input,label").show();
+         $(".card").slideDown(1000);
+
+
+      });
 
    });
 });
