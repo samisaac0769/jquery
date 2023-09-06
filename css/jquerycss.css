@@ -45,7 +45,7 @@ input {
 }
 
 h1 {
-	padding: 10px 40px;
+	padding: 10px 77px;
 	margin: 20px 0;
 	color: white !important;
 	text-align: center;
@@ -86,11 +86,29 @@ button:hover {
 }
 
 .submit input{
-    margin-left: 40%;
-    margin-bottom: 10px;
+        margin-left: 40%;
+        margin-bottom: 10px;
 }
 
 .success{
-color:white; 
-display: none;
+	color:white; 
+	display: none;
+	padding: 25px;
+	margin: 25px;
+	BACKGROUND-COLOR: darkcyan;
+}
+
+
+.success button{
+	background-color: #666363 !important;
+	margin: 20px !important;
+	text-align: center !important;
+	color: wheat !important;
+	background-color: cadetblue !important;
+	margin-left: 90px !important;
+}
+
+
+.success p{
+	font-size: 30px;
 }
