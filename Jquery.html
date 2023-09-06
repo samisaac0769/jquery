@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Form Validation</title>
+      <link rel="stylesheet" href="css/jquerycss.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="js/jqueryjs.js"></script>
+   </head>
+   <body>
+      <div class="regform">
+         <h1>REGISTRATION FORM</h1>
+         <form class="card">
+            <div class="Form1">
+               <label for="name">Name: </label>
+               <div class="p">
+                  <input type="text" id="name" name="name" placeholder="Enter the name" required title="Please enter your name">
+                  <span id="namerror" class="error"></span>
+               </div>
+            </div>
+            <div class="Form1">
+               <label for="age">Age: </label>
+               <div class="p">
+                  <input type="text" id="age" name="age" placeholder="Enter the age" required title="Please enter your age">
+			<span id="agerror" class="error"></span>
+               </div>
+               
+            </div>
+            <div class="Form1">
+               <label for="address">Address: </label>
+               <div class="p">
+                  <input type="text" id="address" name="address" placeholder="Enter the address" required title="Please enter your address">
+               <span id="adderror" class="error"></span>
+               </div>
+
+            </div>
+            <div class="Form1">
+               <label for="state">State: </label>
+               <div class="p">
+                  <input type="text" id="state" name="state" placeholder="Enter the state" required title="Please enter your state">
+               <span id="staerror" class="error"></span>
+               </div>
+
+            </div>
+            <div class="Form1">
+               <label for="phone">Phone: </label>
+               <div class="p">
+                  <input type="text" id="phone" name="phone" placeholder="Enter the phone" required title="Please enter your number" maxlength="10" minlength="10">
+			<span id="phoerror" class="error"></span>
+               </div>
+               
+            </div>
+            <div class="Form1">
+               <label for="email">Email: </label>
+               <div class="p">
+                  <input type="email" id="email" name="email" placeholder="Enter the email" required title="Please enter your mail">
+               <span id="mailerror" class="error"></span>
+               </div>
+
+            </div>
+            <div class="Form1">
+               <label for="password">Password: </label>
+               <div class="p">
+                  <input type="password" id="password" name="password" placeholder="Enter the password" required title="Please enter the password">
+                  <span id="pass1error" class="error"></span>
+                  <span id="pass2error" class="error"></span>
+                  <span id="pass3error" class="error"></span>
+                  <span id="pass4error" class="error"></span>
+               </div>
+            </div>
+            <div class="Form1">
+               <label for="Cpassword">Confirm Password: </label>
+               <div class="p">
+                  <input type="password" id="Cpassword" name="Cpassword" placeholder="Re-confirm the password" required title="Please conform your password">
+                  <span id="cpasserror" class="error"></span>
+               </div>
+            </div>
+		<button type="button" id="validateForm">Submit</button>
+           
+         </form>
+<div class="success" style="color:white; display: none;">Registered Successfully</div>
+      </div>
+   </body>
+</html>
